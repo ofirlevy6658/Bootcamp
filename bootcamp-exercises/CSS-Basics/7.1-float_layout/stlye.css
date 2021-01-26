@@ -1,0 +1,41 @@
+
+.clr{
+    clear:both;
+}
+.container{
+    max-width: 960px;
+    margin:30px auto;
+}
+.header{
+    text-align: center;
+    background-color: orange;
+    margin:auto;
+    border: black solid 1px;
+    
+}
+.side{
+    background-color: green;
+    margin-top: 5px;
+    border: black solid 1px;
+    width: 38%;
+    float: left;
+    height: 400px;
+}
+.main{
+    background-color: purple;
+    margin-top: 5px;
+    border: black solid 1px;
+    width: 60%;
+    float: right;
+    text-align: right;
+    height: 400px;
+}
+
+.footer{
+    text-align: center;
+    background-color: blue;
+    margin:auto;
+    border: black solid 1px;
+    margin-top: 5px;
+    
+}

@@ -1,0 +1,67 @@
+body{
+    background-color: CornflowerBlue;
+    color: white;
+}
+
+.btn1{
+    padding: 8px 30px;
+    background-color: rgb(83, 231, 90);
+    
+}
+
+.btn2{
+    margin-left: 35px;
+    padding: 5px 20px;
+    background-color: red;
+}
+.btn3{
+    margin-left: 35px;
+    padding: 3px 16px;
+    background-color: rgb(112, 182, 230);
+}
+
+.btn4{
+    padding: 8px 30px;
+    background-color: rgb(83, 231, 90);
+    border-radius: 13px;
+}
+
+.btn5{
+    margin-left: 35px;
+    padding: 5px 20px;
+    background-color: red;
+    border-radius: 13px;
+}
+
+.btn6{
+    margin-left: 35px;
+    padding: 3px 16px;
+    background-color: rgb(112, 182, 230);
+    border-radius: 13px;
+}
+.btn7{
+    padding: 8px 30px;
+    background-color: rgba(0, 0, 0,0);
+    
+}
+
+.btn8{
+    margin-left: 35px;
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0,0);
+   
+}
+
+.btn9{
+    margin-left: 35px;
+    padding: 3px 16px;
+    background-color: rgba(0, 0, 0,0);
+    
+}
+button{
+    color:white;
+    margin: auto;
+}
+
+
+
