@@ -1,0 +1,43 @@
+.one {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border:black 3px solid;
+    left: 150px;
+    background-color: white;
+    }
+
+.two {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    border:black 3px solid;
+    left: 275px;
+    top:150px;
+    z-index: 1;
+    background-color: white;
+}
+
+.three {
+    width: 700px;
+    height: 150px;
+    position: absolute;
+    border:black 3px solid;
+    left: 150px;
+    top:350px;
+    z-index: 1;
+    background-color: white;
+}
+
+.four {
+    width: 100px;
+    height: 600px;
+    position: absolute;
+    border:black 3px solid;
+    left: 725px;
+    
+    z-index: 1;
+    background-color: white;
+}
+
+    

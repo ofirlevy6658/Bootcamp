@@ -1,0 +1,15 @@
+#outer {
+    position:fixed;
+    width: 100px;
+    height: 100px;
+    background: darkcyan;
+    margin: 50px;
+    
+    }
+    #inner {
+    width: 50px;
+    height: 50px;
+    background: lightgreen;
+    position: absolute;
+    top: calc(line height+10px);
+    }
