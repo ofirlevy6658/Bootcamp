@@ -1,0 +1,25 @@
+
+
+p{
+    color: white;
+}
+
+.container{
+
+}
+
+.box1,.box2,.box3,.box4{
+    display: inline-block;
+    background-color: black;
+    width: 400px;
+    border:solid red 2px;
+}
+
+@media(max-width:1200px){
+    .box1,.box2,.box3,.box4{
+        display: block;
+        min-width: 400px;
+    }
+}
+
+

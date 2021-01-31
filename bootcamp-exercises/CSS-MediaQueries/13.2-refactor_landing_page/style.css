@@ -1,0 +1,60 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+header{
+    background: url('./background.jpg') no-repeat center center/cover;
+    height: 70vh;
+    text-align: center;
+    color: whitesmoke;
+    min-height: 500px;
+    min-width: 400px;
+}
+a{
+    text-decoration: none;
+}
+
+.container h1{
+    padding: 3rem;
+    padding-top: 10rem;
+}
+.container p{
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.btn{
+    margin-top: 2.5rem;
+    padding: 0.5rem 1.5rem;
+    background-color: rgb(63, 134, 87);
+    border: black solid 3px;
+    border-radius: 50px;
+}
+
+.btn:hover{
+    background-color: peru;
+    color: purple;
+}
+
+section{
+    text-align: center;
+    height: 30vh;
+    padding: 2rem;
+    
+}
+
+section p{
+    color: #6b5b95;
+    display: inline-block;
+    max-width:300px;
+}
+
+

@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    background:url(./background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', social-mediasans-serif;
+    color: #66545e;
+
+}
+
+header{
+    color: #a39193;
+    text-align: center;
+}
+#about-me h4{
+    color: #aa6f73;
+}
+#about-me p{
+    color:#aa6f73;
+    
+}
+#social-media div{
+    max-width: 100px;
+    color:#66545e;
+    margin: auto;
+}
+
+footer{
+    color:#66545e;
+    margin-top: 100px;
+    
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 8%;
+    
+}
+
+.container {
+    padding: 2px 16px;
+    color:#a39193;
+    
+}
+
+.cat{
+    margin-top: 130px;
+    
+}
+
+.cat-img{
+    width: 893px;
+    margin: auto;
+    border:solid 3px black;
+
+
+}
+.right{
+    float: right;
+    
+}
+.left{
+    float: left;
+    
+}
+
+@media(max-width: 1000px){
+    section,footer{
+        display: none;
+    }
+    .card{
+        margin:auto;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
