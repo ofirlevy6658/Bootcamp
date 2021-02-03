@@ -1,0 +1,14 @@
+.container{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    position: relative;
+}
+
+div:before{
+    content:'';
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    position: absolute;
+}

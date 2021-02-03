@@ -1,0 +1,20 @@
+.container{
+    height: 200px;
+    width: 200px;
+    background-color:black;
+    position: relative;
+}
+
+div:before{
+    content:'';
+    border: dotted white 3px;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+}
+
+/* div:hover:before{
+    background-color: gray;
+} */
+
+

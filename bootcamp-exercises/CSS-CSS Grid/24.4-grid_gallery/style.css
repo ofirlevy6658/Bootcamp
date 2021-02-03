@@ -1,0 +1,62 @@
+
+.gallery{
+    display: grid;
+    grid-template-areas: 
+    'img1 img1 img3'
+    'img4 img5 img6'
+    'img7 img8 img9'
+    ;
+}
+
+img{
+    width: auto !important;
+    height: auto !important;
+}
+
+.img1{
+    grid-area: img1;  
+}
+
+.img2{
+    grid-area: img2;  
+}
+.img3{
+    grid-area: img3;  
+}
+.img4{
+    grid-area: img4;  
+}
+.img5{
+    grid-area: img5;  
+}
+.img6{
+    grid-area: img6;  
+}
+.img7{
+    grid-area: img7;  
+}
+
+
+
+
+
+/* @media(max-width: 768px){
+    .grid{
+    grid-template-areas: 
+    'header header header'
+    'sidebar content content'
+    'sidebar2 sidebar2 sidebar2'
+    'footer footer footer';
+}
+}
+
+@media(max-width:500px){
+    .grid{
+        grid-template-areas: 
+        'header header header'
+        'sidebar sidebar sidebar'
+        'content content content'
+        'sidebar2 sidebar2 sidebar2'
+        'footer footer footer';
+    }
+}  */

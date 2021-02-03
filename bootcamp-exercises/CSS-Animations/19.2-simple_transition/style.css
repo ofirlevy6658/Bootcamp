@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: purple;
+    position: relative;
+}
+.box:hover{
+    animation: ani1 2s forwards 0s ease-in-out;
+
+}
+
+@keyframes ani1{
+    from{
+        overflow: hidden;
+        left:0;
+    }
+    to{  
+        overflow: hidden;
+        left:200px;
+        background-color: yellow;
+
+    }
+    
+}
+
+.box::after{
+    content: "";
+    height: 200px;
+    width:200px;
+    position: absolute;
+    background-color: green;
+    left:200px;
+    
+}

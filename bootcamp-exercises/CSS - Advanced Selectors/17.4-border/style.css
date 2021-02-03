@@ -1,0 +1,52 @@
+
+body{
+    height: 100vh;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.container{
+    height: 200px;
+    width: 200px;
+    background-color: wheat;
+    position: relative;
+}
+
+
+.top::after{
+    content: "";
+    position:absolute;
+    height: 20px;
+    width:20px;
+    border-top: green solid 8px;
+    border-right: blue solid 8px;
+    top:0;
+    right:0;
+}
+
+.bot::after{
+    content: "";
+    position:absolute;
+    height: 20px;
+    width:20px;
+    border-top: green solid 8px;
+    border-left: blue solid 8px;
+    top:0;
+    left:0;
+}
+
+
+.bot::before{
+    content: "";
+    position:absolute;
+    height: 20px;
+    width:20px;
+    border-bottom: green solid 8px;
+    border-left: blue solid 8px;
+    bottom:0;
+    left:0;
+}
+
+
+

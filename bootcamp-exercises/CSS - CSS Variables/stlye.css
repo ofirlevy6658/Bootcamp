@@ -1,25 +1,51 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+
+
+:root{
+    --primary-color:#66545e;
+}   
+
 body{
     background:url(./background.jpg) no-repeat center center fixed;
     background-size: cover;
     font-family: 'Roboto', social-mediasans-serif;
-    color: #66545e;
+    color: var(--primary-color);
+    
 
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #7e9a9a;
+}
+.navbar{
+    display: flex;
+    background-color:#F0F8FF;
+    color: #DCDCDC;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo, .navbar ul li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar ul li{
+    padding: 0 60px;
 }
 
 header{
     color: #a39193;
     text-align: center;
 }
-#about-me h4{
+#about-me {
     color: #aa6f73;
 }
-#about-me p{
-    color:#aa6f73;
-    
-}
+
 #social-media div{
     max-width: 100px;
     color:#66545e;
@@ -29,6 +55,7 @@ header{
 footer{
     color:#66545e;
     margin-top: 100px;
+    
 }
 
 .card {
@@ -46,6 +73,7 @@ footer{
 
 .cat{
     margin-top: 130px;
+    
 }
 
 .cat-img{
@@ -62,5 +90,19 @@ footer{
 .left{
     float: left;
     
+}
+
+@media(max-width: 1000px){
+    section,footer,.logo,.card{
+        display: none;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar ul li{
+        display: block;
+        padding:10px;
+    }
+
 }
 
