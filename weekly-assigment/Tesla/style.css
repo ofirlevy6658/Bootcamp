@@ -1,362 +1,439 @@
-/* fonts */
-@font-face {
-    font-family: "Gotham";
-    src: url(../fonts/GothamBook.ttf) format("truetype");
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "Gotham";
-    src: url(../Tesla/fonts/GothamMedium.ttf) format("truetype");
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "Gotham";
-    src: url(../fonts/GothamBold.ttf) format("truetype");
-    font-weight: 700;
-    font-style: normal;
-  }
+:root{
+    --font-med:"Gotham Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-book:"Gotham Book",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    --font-light:"Gotham-Light";
+}
 
-
-
-/* Reset */
 *{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
 }
-
-/* Main Styling */
-
 body{
-    color: #f4f4f4;
-    font-family: "Gotham Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 23px;
-    line-height: 17.5px;
-    vertical-align:baseline;
-    letter-spacing: -0.5px;
+    font-family: var(--font-med);
+   
 }
 
+/* general setting */
 a{
-    /* color */
     text-decoration: none;
-    color:#f4f4f4
-    
-}
-p{
-    font-family: "Gotham Book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height:21px;
-    padding:0px 0px 14px;
-    color: #393c41;
+    color: #fff;
 }
 
+ul{
+    list-style: none;
+}
 
-/* background pictures */
+/* tesla model 3 page */
 
-.background{
-    background: url('./img/model-3-hero.jfif') no-repeat center center/cover;
-    height: 100vh; 
+.model3{
+    height: 100vh;
+    background: url('./img/model-3-hero-desktop.png') no-repeat center center/cover;
+    color: #fff;
+    position: relative;
 }
 
 /* navbar */
-
 .navbar{
-    box-shadow: 0 0 0 transparent;
-    overflow: auto; 
-    /* check overflow */
-
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    text-transform: uppercase;
 }
 
-.navbar .logo{
-    /* display: inline-block */
-    float: left;
-    margin-top: -15px;
-    margin-left:10px;
+.model3ul{
+    margin-left: 150px;
 }
-.navbar ul{
-    list-style: none;
+
+.logo{
+    width:104px;
+    height:24px;
+    
+}
+
+.model3 ul{
+    display: flex;
+}
+.model3 li{
+    padding: 10px;
+}
+
+/* content */
+#header{
+    font-size: 40px;
+    margin-top: 150px;
     text-align: center;
-    margin-top: 20px;
-    overflow-y: hidden;
-}
-/* .center{
-    
-} */
-.navbar ul li{
-    display: inline-block;
-    margin:0 20px;
-
-    
+    height: 48px;
+    letter-spacing: -0.6px;
+    line-height: 48px;
 }
 
-.content{
-    text-align: center;
-    margin-top:110px;
-}
-
-.ground{
-    text-align: center;
-    position: relative;
-    top:70%;
-    height: 100px;
-}
-.area1{
+.content-bottom{
     position: absolute;
-    left:40%;
-}
-.area2{
-    position: absolute;
-    left:47%;
-}
-.area3{
-    position: absolute;
-    left:54%;
+    width: 100%;
+    bottom: 10%;
+    display: flex;
+    align-items:center; 
+    justify-content: center;
+    height:auto;
     
 }
 
-.ground button{
-    margin: 0;
-    position: absolute;
-    left: 60%;
-    color: #ffffff;
-    border-color: #ffffff;
-}
-.ground button:hover{
-    background-color: #ffffff;
-    clor:#1f2228;
-}
-.ground .under{
-    
-    font-size: 12px;
-    color: #ffffff;
-    line-height: 18px;
-    
 
-}
 
-.navbar .right{
-    clear: right;
-    float: right;
-    margin-top: -35px;
-    
-}
-
-.content span{
-    font-size: 50px;
-}
-
-.menu-icon{
-    
-    /*  */
-}
-
-.nav2{
-    float: left;
-}
-
-.open-car{
-    float: right;
-    height: 100vh;
-    background-color: #F2F2F2;
-    width: 77%;
-}
-
-.safty{
-    color:#171a20;
-    float:left;
-    width: 20%;
-    vertical-align:baseline;
-    letter-spacing:-0.5px;
-    margin-left: 50px;
-    
-}
-.safty h2{
-    font-size:17px;
-    vertical-align:baseline;
-    letter-spacing:-0.5px;
-    font-family: "Gotham Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight:500;
-    line-height:21px;
-    margin-top: -15px;
-}
-
-.safty h1{
-    line-height:36px;
-    font-weight:500;
-    font-size:28px;
-}
-
-.safty p{
-    font-family: "Gotham Book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size:21px;
-    line-height:21px;
-    margin:0px 0px 16px;
-    margin-top: 50px;
-    padding:0px 0px 14px;
-    font-weight:400;
-    text-align:start;
-    text-indent:0px;
-    letter-spacing: 1px;
-}
-
-.box{
-    margin-top: 40px;
-    background-color: #eeeeee;
-    border-radius: 15%;
-    width: 90%;
-    height: 450px;
-}
-
-.box .header{
-    line-height:17.5px;
-    padding: 30px;
+.content-bottom p  {
+    font-size: 28px;
     display: block;
-    font-size:20px;
+    letter-spacing:-0.5px;
+    
 }
 
-.box span{
-    font-family: "Gotham Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size:14px;
-line-height:21px;
-font-weight:700;
-text-align: left;
-display: block;
-padding-left: 50px;
-}
-
-
-.box .stars{
-    bottom: 35px;
-    position: relative;
-    text-align: right;
-    margin-right: 30px;
-    font-size: 25px;
-
-}
-
-.box .text{
-    font-size: 22px;
-}
-.box .mini{
-    font-family:"Gotham Book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight:400;
-}
-
-.btns{
-    margin-top: 100px;
-    display: inline-block;
-}
-
-.btn{
+.content-bottom span{
+    font-family: var(--font-book);
     font-size: 12px;
-    color:#171a20;
-    height: 40px;
-    line-height:14.4px;
-    padding:1px 42px;
-    display: inline-block;
-    margin-left: 50%;
-    text-align: center;
-    background-color: transparent;
-    border-radius: 100px;
-    white-space: nowrap;
-    border: 3px solid #393c41;
-    cursor:pointer;
+    display: block;
+    letter-spacing:-0.5px
+    
+}
 
+.content-bottom .part-a {
+    padding: 20px;
+
+    
+}
+.content-bottom .part-b{
+    
+    padding: 20px;
+    border-left: #ffffff 1px solid;
+    border-right: #ffffff 1px solid;
+    
+}
+.content-bottom .part-c{
+    padding: 20px;
+    
+}
+
+.btn{   
+    border-radius: 50px;
+    line-height: 14.4px;
+    padding: 10px 40px;
+    background: transparent;
+}
+.btn-light{
+    border:#ffffff 3px solid;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .btn:hover{
-    background-color:  #393c41;
-    color:#eeeeee
+    background: #fff;
+    color:black;
+    transition: all 1s ease;
 }
 
-.btns img {
-    font-size: 12px;
-    line-height: 21px;
-    border: solid 3px #393c41;
-    border-radius: 50%;
-    color:#171a20;
-    
-    
-}
-.btns span{
-    font-family:"Gotham Book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-
-}
-.btns img:hover{
-    background-color:  #393c41;
+.arrow{
+    transform: rotate(180deg);
+position:absolute;
+bottom: 40px;
+left: 50%;
 }
 
-.page{
+/* page 2 */
+
+#safety{
     height: 100vh;
     position: relative;
+    margin-left: 8px;
+    letter-spacing: -0.5px;
 }
 
+.side-img{
+    width:83.7%;
+    height: 100%;
+    position: absolute;
+    right:0
+}
 
+.side-img img{ 
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
+}
 
-.page3 .top img{
-
-    height: 80vh;
-    max-width: 100%;
+.content-safety{
+    height: 100%;
+    width: 16%;
     
-
-}
-.page3 .bot{
-    position: relative;
-    height: 20vh;
-    color: #171a20;
-}
-.bot h2{
-    font-family: "Gotham Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    position: absolute;
-    top: 20%;
-    left: 33%;
-    display: block;
-    color: #171a20;
-    font-size: 17px;    
 }
 
-.bot h1{
-    position: absolute;
-    top:32%;
-    left:33%;
-    line-height: 36px;
+.content-safety h2 ,.headers-page5 h2{
+    font-family: var(--font-light);
+    line-height: 17px;
+    font-weight:normal;
+}
+.content-safety h1,.headers-page5 h1{
     font-size: 28px;
+    line-height: 36px;
+    font-weight:normal;
 }
 
-.bot .btn{
-    position: absolute;
-    margin: 0;
-    left: 40%;
-    top: 46%;
+.safety-headers,.right-side-content-p{
+    padding-top: 15px;
+    margin-left: 40px;
+}
+.safety-p{
+    font-weight: 400px;
+    font-family: "Gotham Book";
+    padding-top: 20px;
+    margin-left: 40px;
+    line-height: 21px;
+    font-size: 20px;
 }
 
+.grey-container{
+    width: 70%;
+    height: 287px;
+    margin-top: 75px;
+    margin-left: 40px;
+    background-color: #eee;
+    border-radius: 20px;
+}
+.grey-container .star-header{
+    display: block;
+    padding: 5px;
+    text-align: center;
+    line-height:28px;
+    font-size:20px;
+}
 
-#bot-location{
+.row{
+    margin: auto;
+    width: 80%;
+}
+.grey-container .row{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
     
-    position: absolute;
-    left:31.5%;
-    top:45%
 }
 
-.bot span{
-    color: #393c41;
-    position: absolute;
-    left:34%;
-    top:50%;
+.mini-text{
     
-
+    font-size: 12px;
+    display: block;
+    width: 80%;
+    margin: auto;
 }
 
-.boxp{
+.bottom-page{
     position: absolute;
-    height: 15%;
-    width: 20%;
-    right:30%;
-    top:20%;
-    line-height:21px;
-    font-size: 14px;
+    width: 15%;
+    height: 75px;
+    bottom: 5%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.plus-icon{
+    border: 3px solid black;
+    border-radius: 50%;    
+}
+
+.btn-dark{
+    border:#000000 3px solid;
+    color: #000000;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #000000;
+    color:#eee;
+    transition: all 1s ease;
+}
+
+
+/* page 3 */
+
+
+#performance{
+    height: 100vh;
+    
+}
+#performance .upper-section{
+    width: 100%;
+    height: 80.8%;
+    position: relative;
+    color:#eee;
+}
+.red-car {
+    height: 100%;
+    background: url('./img/redtesla.jfif') no-repeat center center/cover;
+    position: relative;
+}
+
+
+.low-part{
+    color: #000000;
+    min-height: 20%;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.left-side p , .left-side h1{
+    padding-left: 35px;
+}
+
+.left-side{
+    color: black;
+    padding-top: 35px;
+    width: 50%;
+    height: 100%;
+}
+
+.plus2{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    
+}
+
+.right-side{
+    padding-top: 50px;
+    margin-right: 15%;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right:0;
+    top: 0;
+}
+
+
+
+
+/* page 4 */
+.blue-car {
+    height: 100%;
+    background: url('./img/blue-car.jfif') no-repeat center center/cover;
+    position: relative;
+}
+
+/* page 5 */
+
+.range{
+    height: 100vh;
+    position: relative;
+    margin-left: 8px;
+    letter-spacing: -0.5px;
+}
+.range .side-img{
+    position: absolute;
+    left: 0;
+}
+
+.range .right-side-content{
+    width: 16%;
+    height: 100%;
+   
+    position:absolute;
+    right:0;
+}   
+
+.headers-page5{
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+.right-side-content-p{
+    margin-left: 13px;
+}
+
+.right-side-content img{
+    display: block;
+    margin:auto;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+/* media quires page 2  */
+@media screen and (max-width: 1850px){
+    .side-img{
+        width: 70%;
+    }
+    .content-safety{
+        height: 100%;
+        width: 30%;
+        
+    }
+    .bottom-page{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .side-img{
+        width: 50%;
+    }
+    .content-safety{
+        height: 100%;
+        width: 50%;
+    }
+    .bottom-page{
+        width: 40%;
+    }
+    
+}
+
+@media screen and (max-width: 650px){
+    .side-img{
+        width: 30%;
+    }
+    .content-safety{
+        height: 100%;
+        width: 70%;
+        
+    }
+    .bottom-page{
+        width: 70%;
+    }
+}
+
+/* media quires page 3 and 4 */
+@media screen and (max-width: 2100px){
+    .low-part{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1400px){
+    .low-part{
+        width: 100%;
+    }
+    @media screen and (max-width: 1100px){
+        .right-side{
+            display:none;
+        }
+        .left-side{
+            width: 90%;
+            margin: auto;
+        }
+        
 
 }
