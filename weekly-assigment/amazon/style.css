@@ -1,0 +1,358 @@
+@font-face {
+	font-family: "Amazon Ember";
+	src: url("Amazon-Ember-Regular.ttf") format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #ffffff;
+}
+a {
+	text-decoration: none;
+}
+body {
+	font-family: "Amazon Ember";
+}
+span {
+	font-size: 14px;
+}
+/* nav bar */
+nav {
+	display: flex;
+	justify-content: start;
+	height: 60px;
+	background-color: #0f1111;
+	align-items: center;
+}
+li {
+	display: inline-block;
+}
+.navbar {
+	min-width: 100px;
+}
+.logo {
+	margin: auto 0;
+	background-image: url("img/nav.png");
+	background-size: 350px;
+	text-indent: -500px;
+	background-position: -10px -51px;
+	width: 97px;
+	height: 30px;
+}
+
+nav .left-side {
+	width: 268.61px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+nav .img {
+	width: 113px;
+	height: 50px;
+	padding: 1px 8px 0 6px;
+}
+
+nav .deliver {
+	width: 143px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	padding: 0px 9px;
+}
+
+.deliver span {
+	margin: 5px 2px 5px 0px;
+	padding: 0 9px;
+	line-height: 80%;
+	color: #ffffff;
+}
+.deliver .mini-span {
+	color: #cccccc;
+	font-size: 12px;
+}
+nav .deliver .location-icon {
+	background-image: url("img/nav.png");
+	background-size: 350px;
+	text-indent: -500px;
+	background-position: -71px -378px;
+	width: 15px;
+	height: 18px;
+	margin-top: 8px;
+	position: absolute;
+	left: 0;
+	bottom: 7px;
+}
+
+.search-bar {
+	height: 40px;
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+.search {
+	width: 90%;
+	padding: 7px 10px 10px 0px;
+}
+.search-bar .all-btn {
+	background-color: #f4f4f4;
+	color: gray;
+	font-size: 12px;
+	width: 50px;
+	text-align: center;
+	padding: 12px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.search-button {
+	width: 45px;
+	height: 40px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: url("img/nav.png") 2px -280px;
+	background-size: 350px;
+	text-indent: -500px;
+	background-color: #febd69;
+}
+
+.search-button:hover {
+	background-color: #ff9900;
+}
+
+.usa-flag {
+	background: url("img/flags.png") 0px -130px;
+	align-items: center;
+	width: 24px;
+	height: 18px;
+	margin-right: 30px;
+}
+
+.sign {
+	margin-right: 30px;
+}
+.lower-text {
+	display: block;
+	margin-right: 30px;
+}
+.cart {
+	margin-right: 30px;
+}
+.cart-icon {
+	display: inline-block;
+	background: url("img/navv.png") -10px -340px;
+	background-image: 350px;
+	height: 26px;
+	width: 38px;
+}
+
+/* secondary nav */
+.secondary-nav {
+	background-color: #232f3e;
+	height: 39px;
+}
+.secondary-nav-content {
+	margin-right: 15px;
+	height: 39px;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+.secondary-nav-content a {
+	margin-left: 20px;
+	height: 12px;
+	font-size: 14px;
+}
+
+.third-nav {
+	height: 50px;
+	border: #f4f4f4 solid 1px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+.third-nav a {
+	color: #333333;
+	padding: 0 4vw;
+}
+
+/* product area */
+.product {
+	width: 60vw;
+
+	margin: 0 auto;
+	height: 90vh;
+	color: black;
+	display: flex;
+	min-width: 1600px;
+}
+.product .gpu-imges {
+	width: 50%;
+	height: 80%;
+
+	display: flex;
+	position: sticky;
+	top: 0;
+}
+.gpu-imges .column-img {
+	margin-top: 45px;
+	height: 45%;
+	width: 10%;
+}
+.gpu-imges .column-img img {
+	border: solid 1px gray;
+}
+
+.gpu-imges .big-img {
+	margin-top: 12%;
+}
+
+.gpu-imges .column-img img:hover {
+	border: solid 2px #ff9900;
+}
+
+.product-propreties {
+	height: 80%;
+	width: 34%;
+	margin-top: 1.5%;
+}
+.product-propreties .title {
+	color: #0f1111;
+	font-size: 24px;
+}
+.product-propreties a,
+.left-side a,
+.deals a {
+	color: #007185;
+	font-size: 14px;
+}
+.asus {
+	display: block;
+}
+.rate {
+	width: 70%;
+	height: 18px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.rate .stars {
+	background: url("img/stars.png");
+	background-position: -84px -28px;
+	width: 80px;
+	height: 18px;
+}
+.border {
+	border-right: gray solid 1px;
+	height: 90%;
+}
+
+.price {
+	height: 35%;
+	border-top: grey solid 1px;
+	border-bottom: grey solid 1px;
+}
+.red,
+#red {
+	color: #b12704;
+}
+.big-font {
+	font-size: 18px;
+}
+.price span {
+	color: #565959;
+}
+.price .header {
+	margin: 15px 0;
+}
+
+.specs {
+	width: 80%;
+	display: flex;
+	height: 70%;
+}
+.specs span {
+	display: block;
+	line-height: 30px;
+}
+.specs .left {
+	width: 50%;
+	font-weight: 700;
+}
+.specs .right {
+	width: 47%;
+}
+
+.about h1 {
+	color: #0f1111;
+	font-size: 16px;
+}
+.about li {
+	font-size: 14px;
+	display: list-item;
+	color: #0f1111;
+	line-height: 20px;
+}
+.new {
+	padding-top: 25px;
+}
+.left-side {
+	width: 16%;
+	margin-top: 1.5%;
+}
+.left-side .box {
+	width: 242px;
+	height: 141px;
+
+	border-radius: 8px;
+}
+.btn {
+	width: 204px;
+	height: 29px;
+	color: #111111;
+}
+
+.buy-options {
+	margin-top: 7px;
+}
+.box a {
+	margin-left: 2px;
+}
+.box .list {
+	margin-top: 15px;
+	text-align: left;
+	padding: 0 10px 0 11px;
+}
+
+.deals {
+	border-top: grey 1px solid;
+	height: 50vh;
+	width: 60vw;
+	margin: 0 auto;
+	min-width: 1500px;
+}
+.deals .row1,
+.row2 {
+	margin-top: 30px;
+}
+.deals h2 {
+	border-top: 1px solid grey;
+	color: #cc6600;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+}
+/* https://www.amazon.com/ASUS-Graphics-DisplayPort-Axial-tech-2-9-Slot/dp/B08J6GMWCQ/ref=sr_1_4?crid=36MXNP7XLFLBU&dchild=1&keywords=rtx+3090&qid=1613116626&sprefix=gtx+3090%2Caps%2C278&sr=8-4 */
+.row1,
+.row2 {
+	display: flex;
+	justify-content: space-evenly;
+}
+.row1 a,
+.row2 a {
+	display: block;
+	width: 160px;
+}
