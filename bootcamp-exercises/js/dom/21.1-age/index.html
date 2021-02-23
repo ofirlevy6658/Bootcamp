@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				color: white;
+				background-color: #4267b2;
+				font-family: "Courier New", Courier, monospace;
+			}
+			div {
+				margin-top: 150px;
+				text-align: center;
+			}
+			#age,
+			button {
+				background-color: #898f9c;
+				border-radius: 10px;
+				padding: 3px 7px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>Can you Drink?</h1>
+			<label for="age">Enter your age:</label>
+			<input type="text" id="age" name="age" />
+			<button>submit</button>
+		</div>
+	</body>
+	<script>
+		const button = document.querySelector("button");
+		const input = document.querySelector("input[name='age']");
+		const h1 = document.createElement("h1");
+		button.addEventListener("click", () => {
+			input.value > 17
+				? (h1.innerHTML = "you can drink appear")
+				: (h1.innerHTML = "you’re too young");
+			button.insertAdjacentElement("afterend", h1);
+		});
+	</script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="myFirstDiv"></div>
+		<div id="mySecondDiv"></div>
+		<div id="myThridDiv"></div>
+		<div id="myFourthDiv"></div>
+		<script>
+			const divs = document.querySelectorAll("div");
+			console.log((divs[0].innerHTML = "hello from div1"));
+			console.log((divs[1].innerHTML = "div2"));
+			console.log((divs[2].innerHTML = "div3"));
+			console.log((divs[3].innerHTML = "div4"));
+		</script>
+	</body>
+</html>

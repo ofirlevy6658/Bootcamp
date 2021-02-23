@@ -1,0 +1,29 @@
+.box {
+	margin: auto;
+	margin-top: 300px;
+	width: auto;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: black solid 3px;
+	flex-wrap: wrap;
+}
+
+input {
+	height: 15px;
+	width: 20px;
+	padding: 25px 20px;
+	margin: 0 5px;
+	border: black solid 2px;
+	font-size: 30px;
+}
+
+button {
+	display: block;
+	flex-basis: 30%;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	padding: 10px 5px;
+}

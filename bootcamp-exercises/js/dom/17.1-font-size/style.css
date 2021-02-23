@@ -1,0 +1,18 @@
+body {
+	background-color: azure;
+}
+div {
+	text-align: center;
+}
+p {
+	width: 1550px;
+	display: inline-block;
+}
+
+.btn {
+	padding: 5px 75px;
+	border-radius: 10px;
+	border: black solid 2px;
+	background-color: #f4f4f4;
+	cursor: pointer;
+}

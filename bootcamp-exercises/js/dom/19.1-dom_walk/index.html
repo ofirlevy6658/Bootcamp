@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="./script.js" defer></script>
+	</head>
+	<body>
+		<ul>
+			<li>title 1</li>
+			<li class="start-here">title 2</li>
+			<li>
+				<ul>
+					<li>sub title 1</li>
+					<li>sub title 2</li>
+					<li>sub title 3</li>
+				</ul>
+			</li>
+			<li>title 3</li>
+		</ul>
+		<div>
+			<p>Hello World!</p>
+		</div>
+	</body>
+	<script>
+		let start = document.querySelector(".start-here");
+		start.innerHTML = "main title";
+		start = start.nextElementSibling.lastElementChild;
+		start.appendChild(document.createElement("li"));
+		start.lastElementChild.innerHTML = "sub title 4";
+		start.lastElementChild.remove();
+		start.parentElement.parentElement.firstElementChild.innerHTML =
+			"Master Of The Dom";
+		console.log(start.parentElement.parentElement.nextElementSibling);
+		start.parentElement.parentElement.nextElementSibling.firstElementChild.innerHTML =
+			"Obey you master Your life burns faster";
+		console.log(start);
+	</script>
+</html>
