@@ -1,8 +1,8 @@
-const Fibonacci = (n) => {
-	let a = 0,
-		fib = 0,
-		b = 1;
-	for (let i = 0; i < n - 2; i++) {
-		a += b;
-	}
+const fibonacci = (n) => {
+	if (n === 0) return 1;
+	if (n === -1) return 0;
+	return fibonacci(n - 1) + fibonacci(n - 2);
 };
+
+//test
+console.log(fibonacci(5));

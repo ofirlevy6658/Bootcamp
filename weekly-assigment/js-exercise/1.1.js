@@ -1,4 +1,4 @@
-const yesNo = (bool) => (bool ? "yes" : "no");
+const yesNo = (bool) => (bool ? "Yes" : "No");
 
 console.log(yesNo(true));
 console.log(yesNo(false));
