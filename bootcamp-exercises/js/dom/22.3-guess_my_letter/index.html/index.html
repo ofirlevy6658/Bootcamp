@@ -5,21 +5,19 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<style>
+			body {
+				text-align: center;
+				font-family: "Courier New", Courier, monospace;
+			}
+			.box {
+				border: black solid 3px;
+				width: 45px;
+				margin: auto;
+			}
+		</style>
 	</head>
-	<style>
-		body {
-			text-align: center;
-			font-family: "Courier New", Courier, monospace;
-		}
-		.box {
-			border: black solid 3px;
-			width: 45px;
-			margin: auto;
-		}
-		h4 {
-			color: "red";
-		}
-	</style>
+
 	<body>
 		<h1>Welcome To Guess My Letter</h1>
 		<div class="box"><p class="letter">?</p></div>
@@ -35,7 +33,6 @@
 			const userGuess = document.querySelector(".userGuess");
 			const userMsg = document.querySelector(".userMsg");
 			const letter = document.querySelector(".letter");
-
 			const letterToGuess = String.fromCharCode(
 				97 + Math.floor(Math.random() * 26)
 			);
@@ -43,6 +40,7 @@
 			document.addEventListener("keyup", (e) => {
 				let char = e.key;
 				if (letterGuess.includes(char)) {
+					userMsg.style.color = "red";
 					userMsg.innerHTML = `${char} has already been guessed!`;
 				} else if (/[a-z]/i.test(char)) {
 					letterGuess.push(e.key);
@@ -51,8 +49,9 @@
 						letter.innerHTML = letterToGuess;
 						userMsg.innerHTML = "Right Letter!";
 						game.innerHTML = "Would you like to play again?";
-					} else userMsg.innerHTML = "Nope, wrong letter";
+					}
 				} else {
+					userMsg.style.color = "red";
 					userMsg.innerHTML = `${char} Not a letter`;
 				}
 				userGuess.innerHTML = letterGuess;
