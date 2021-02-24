@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<style>
+			body {
+				display: flex;
+				justify-content: center;
+				margin-top: 300px;
+				background-color: blueviolet;
+				color: white;
+			}
+			input,
+			button {
+				display: block;
+				border-radius: 10px;
+			}
+		</style>
+		<form name="singup">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" />
+			<label for="age">Age</label>
+			<input type="text" id="age" name="age" />
+			<label for="email">Email</label>
+			<input type="text" id="email" name="email" />
+			<button type="submit">Submit</button>
+		</form>
+		<script>
+			const form = document.querySelector('[name="singup"]');
+			const success = document.createElement("h1");
+			form.addEventListener("submit", (e) => {
+				const yes = confirm(
+					`Are you sure about those details?\nid:${e.currentTarget.name.value} \nAge:${e.currentTarget.age.value}\nEmail:${e.currentTarget.email.value}  id:${e.currentTarget.name.value} \nAge:${e.currentTarget.age.value}\nEmail:${e.currentTarget.email.value}`
+				);
+				if (yes) {
+					alert("congratulations you successfully");
+				} else {
+					e.preventDefault();
+				}
+			});
+		</script>
+	</body>
+</html>
