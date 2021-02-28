@@ -12,7 +12,7 @@ const myObj = {
 };
 myObj.greet();
 // the problem is when u using arrow function in object
-// the this cant find the propreties the arrow function create his own closure
+// the arrow function go to other scope to for this
 // to fix that we can use normal function
 const myObj2 = {
 	name: "Timmy",
@@ -23,12 +23,13 @@ const myObj2 = {
 myObj2.greet();
 
 //3
-//this will point to the global function object
+// this will point to the window becase we call it from the global scope
 const myFuncDec = function () {
 	console.log(this);
 };
 myFuncDec();
 //4
+//this will also point to the window
 const myFuncArrow = (name) => {
 	name = 3;
 	console.log(this);
@@ -36,6 +37,8 @@ const myFuncArrow = (name) => {
 myFuncArrow();
 
 //5
+//the problem is when we use arrow function its go to outer scope and will not find the this of the element.
+//we can fix this by change the function to normal and not arrow
 document.querySelector(".element").addEventListener("click", func);
 
 function func() {

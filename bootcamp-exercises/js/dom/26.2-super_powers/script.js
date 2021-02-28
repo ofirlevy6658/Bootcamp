@@ -5,5 +5,5 @@ const storm = {
 function printSuperPower() {
 	console.log("my superpower is " + this.superPower);
 }
-
-printSuperPower(storm);
+storm.printSuperPower = printSuperPower;
+storm.printSuperPower();
