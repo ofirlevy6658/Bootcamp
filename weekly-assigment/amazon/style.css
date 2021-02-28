@@ -356,3 +356,26 @@ nav .deliver .location-icon {
 	display: block;
 	width: 160px;
 }
+.move {
+	display: inline-block;
+	border: black solid;
+	padding: 5px;
+	height: 30px;
+	margin: auto 0;
+	cursor: pointer;
+}
+.arrow {
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+}
+
+.right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+.left {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+}
