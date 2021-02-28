@@ -1,21 +1,15 @@
-const myhtml = `<div className="header"> 
-					<h1>This was created by pure js</h1>
-				</div>
-				<div>
-					<h2>Please Enter your name</h2>
-					<input> 
-					</form>
-				</div`;
-
-// btn.addEventListener("click", () => {
-// 	if (isNaN(text.value)) {
-// 		smiles.innerHTML = "<h1>Wrong input</h1>";
-// 	} else {
-// 		text.value > 0 ? (smiles.innerHTML = "") : null;
-// 		for (let i = 0; i < text.value; i++) {
-// 			let img = document.createElement("img");
-// 			img.src = src;
-// 			smiles.append(img);
-// 		}
-// 	}
-// });
+const btn = document.createElement("button");
+btn.innerHTML = "CLICK HERE BRUH";
+console.log(btn);
+document.body.appendChild(btn);
+let flag = false;
+btn.addEventListener("click", () => {
+	if (flag) {
+		document.body.style.backgroundColor = "red";
+		flag = 0;
+	} else {
+		btn.innerHTML = "CLICK HERE againnnnnn";
+		flag = 1;
+		document.body.style.backgroundColor = "green";
+	}
+});
