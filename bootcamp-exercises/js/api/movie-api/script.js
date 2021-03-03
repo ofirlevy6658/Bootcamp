@@ -6,10 +6,14 @@ btn.addEventListener("click", displayData);
 
 //
 const request = async (movie) => {
-	const resposne = await fetch(
-		`http://www.omdbapi.com/?apikey=86ae5f35&t=${movie}`
+	const response = await fetch(
+		`http://www.omdbapi.com/?apikey=7764b08d&t=${movie}`
 	);
-	return resposne.json();
+	console.log(response.ok);
+	if (!response.status) {
+		return;
+	}
+	return response.json();
 };
 async function displayData() {
 	const data = await request(userSearch.value);
@@ -30,9 +34,12 @@ async function displayData() {
 		actors: data.Actors,
 		ratings: data.Ratings,
 	};
-
+	let rateStr = "";
+	movie.ratings.forEach((rate) => {
+		console.log(rate);
+		rateStr = ` ${rateStr} ${rate.Source} ${rate.Value}<br>`;
+	});
 	const container = document.querySelector(".container");
-
 	const dataElement = `<div>
 	 							<img src="${movie.poster}" width="200px">
 	 							<h1>${movie.title}</h1>
@@ -44,7 +51,8 @@ async function displayData() {
                                 <h4>Actors</h4>
                                 <p>${movie.actors}</p>
                                 <h4>Rating</h4>
-	 						</div>`;
+                                <p>${rateStr}</p>
+	 					    </div>`;
 	const divMovie = document.querySelector(".movie");
 	divMovie.innerHTML = dataElement;
 	divMovie.style.border = "solid black 3px";
