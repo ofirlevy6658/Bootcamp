@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				text-align: center;
+			}
+			input {
+				margin: 10px;
+			}
+			.search {
+				margin-left: 200px;
+			}
+			.btn {
+				color: blue;
+			}
+			.container {
+				display: flex;
+				height: auto;
+				justify-content: center;
+				align-items: center;
+			}
+			.movie {
+				height: auto;
+				width: 350px;
+				text-align: center;
+			}
+			#notFound {
+				margin-left: 15px;
+				color: red;
+				display: inline;
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="search">
+			<label for="movie">Movie</label>
+			<input id="movie" type="text" />
+			<button type="submit" class="btn">Search</button>
+			<p id="notFound">Movie not found, please try again</p>
+		</div>
+		<div class="container">
+			<div class="movie"></div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
