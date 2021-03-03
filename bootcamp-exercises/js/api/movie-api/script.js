@@ -9,11 +9,17 @@ const request = async (movie) => {
 	const resposne = await fetch(
 		`http://www.omdbapi.com/?apikey=86ae5f35&t=${movie}`
 	);
-
 	return resposne.json();
 };
 async function displayData() {
 	const data = await request(userSearch.value);
+	console.log(data);
+	if (data.Response === "False") {
+		wrongMovie.style.visibility = "visible";
+		return;
+	}
+
+	wrongMovie.style.visibility = "hidden";
 	const movie = {
 		poster: data.Poster,
 		title: data.Title,
@@ -25,11 +31,6 @@ async function displayData() {
 		ratings: data.Ratings,
 	};
 
-	// if (data.re === 404) {
-	// 	worngUser.style.visibility = "visible";
-	// 	return;
-	// }
-	// 	worngUser.style.visibility = "hidden";
 	const container = document.querySelector(".container");
 
 	const dataElement = `<div>
