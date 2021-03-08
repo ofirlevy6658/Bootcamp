@@ -279,11 +279,11 @@ nav .deliver .location-icon {
 	display: block;
 	line-height: 30px;
 }
-.specs .left {
+.specs .left-bar {
 	width: 50%;
 	font-weight: 700;
 }
-.specs .right {
+.specs .right-bar {
 	width: 47%;
 }
 
