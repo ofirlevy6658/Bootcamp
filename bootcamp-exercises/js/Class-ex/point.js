@@ -33,9 +33,38 @@ class Point {
 	}
 }
 
-const p = new Point(4, 10);
-const p2 = new Point(15, 10);
-const p3 = new Point(15, 10);
-console.log(p.isSame(p3));
-console.log(p2.isSame(p3));
-p.print();
+class PointWorld {
+	constructor() {
+		this.pointArr = [];
+	}
+
+	sortByY() {
+		const sorted = [...this.pointArr];
+		sorted.sort((a, b) => (a.y > b.y ? -1 : a.y < b.y ? 1 : 0));
+		return sorted;
+	}
+	uniquePoints() {
+		return [...new Set(this.pointArr)];
+	}
+	sumX() {
+		return this.pointArr.reduce((acc, current) => current.x + acc.x);
+	}
+	findPoint(p) {
+		const find = this.pointArr.find(
+			(point) => point.x == p.x && point.y == p.y
+		);
+		if (find) return true;
+		return false;
+	}
+}
+
+const p1 = new Point(4, 5);
+const p2 = new Point(8, 7);
+const p3 = new Point(55, 555);
+const pointArr = new PointWorld();
+pointArr.pointArr.push(p1);
+pointArr.pointArr.push(p2);
+console.log(pointArr.findPoint(p3));
+console.log(pointArr.sumX());
+pointArr.pointArr.push(p3);
+console.log(pointArr.sortByY());
