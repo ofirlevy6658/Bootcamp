@@ -28,3 +28,6 @@ const max = cars.reduce(function (prev, current) {
 	return prev.y > current.y ? prev : current;
 });
 max.print();
+
+cars.sort((a, b) => (a.speed < b.speed ? -1 : a.speed > b.speed ? 1 : 0));
+console.log(cars);
