@@ -33,8 +33,6 @@ function unmarkAsDone(id) {
 }
 
 function status() {
-	const done = arr.filter((el) => el.isCompleted);
-	const notDone = arr.filter((el) => !el.isCompleted);
 	const tasks = [];
 	arr.forEach((el) => {
 		if (el.isCompleted)
