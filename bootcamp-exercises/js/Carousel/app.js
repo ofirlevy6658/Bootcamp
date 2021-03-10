@@ -24,7 +24,6 @@ function moveRight() {
 		arrCarousel[currentImg].header;
 	document.querySelector(".img-sub").textContent =
 		arrCarousel[currentImg].subHeader;
-	setTimeout(moveRight, 5000);
 }
 
 document.querySelector(".arrow-left").addEventListener("click", moveLeft);
@@ -38,5 +37,3 @@ function moveLeft() {
 	document.querySelector(".img-sub").textContent =
 		arrCarousel[currentImg].subHeader;
 }
-
-moveRight();
