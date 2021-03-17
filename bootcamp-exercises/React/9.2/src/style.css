@@ -1,0 +1,12 @@
+.album {
+	width: 350px;
+	border: black solid 3px;
+	text-align: center;
+	display: inline-block;
+	margin-left: 15px;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+}
