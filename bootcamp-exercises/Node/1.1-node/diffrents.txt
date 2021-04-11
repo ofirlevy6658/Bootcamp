@@ -1,0 +1,20 @@
+Write in your own words the following:
+1. What are 3 things node.js has that the client side javascript doesn’t
+have. And the reasons why.
+
+2. What are 3 things the client side javascript has that node.js doesn’t
+have. And the reasons why
+
+1
+    a) node has global object, browser doesnt 
+    b) node has process object, browser doesnt
+    c) node js has full access to the system browser doesnt.
+
+2 
+    a) client side has window object node doesnt because he doesnt need it, 
+        the browser provided window.
+    b) client has docuemnt and node doesnt because he use dom.
+    c)  node js run in v8 engine only, client side run on browser engine (not neccery chome)
+
+
+
