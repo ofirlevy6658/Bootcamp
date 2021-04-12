@@ -1,0 +1,10 @@
+We took the code we did in data massaging in JS and broke
+the code. Copy the code (in the next page) and use the
+debugging tool you have learned. Find the bug and post a
+screen shot of where it fails from the debugging console
+and explain the bug and the fix in your own words.
+
+
+the bug is happend because we try to use forEach on object and not array,
+we can print the proprety of the object as is if its only one object or put the objects in array 
+and then use forEach.
