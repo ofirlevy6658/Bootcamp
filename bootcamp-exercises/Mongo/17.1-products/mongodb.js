@@ -62,68 +62,68 @@ const Product = mongoose.model("Product", {
 	},
 });
 
-const pc = new Product({
-	name: "gamer pc",
-	category: "gaming",
-	isActive: true,
-	details: {
-		description: "gaming pc with new graphic card",
-		price: 5000,
-		discount: 270,
-		images: ["img1", "img2"],
-		phone: "0528846397",
-	},
-});
+// const pc = new Product({
+// 	name: "gamer pc",
+// 	category: "gaming",
+// 	isActive: true,
+// 	details: {
+// 		description: "gaming pc with new graphic card",
+// 		price: 5000,
+// 		discount: 270,
+// 		images: ["img1", "img2"],
+// 		phone: "0528846397",
+// 	},
+// });
 
-pc.save()
-	.then(() => {
-		console.log(pc);
-	})
-	.catch((error) => {
-		console.log(error);
-	});
+// pc.save()
+// 	.then(() => {
+// 		console.log(pc);
+// 	})
+// 	.catch((error) => {
+// 		console.log(error);
+// 	});
 
-const car = new Product({
-	name: "mazda 3012451213",
-	category: "electronic cars",
-	isActive: true,
-	details: {
-		description: "new fking car!!!!!!!! without discount dlsaodkoasko dsa",
-		price: 9001,
-		images: ["img1", "img2"],
-		phone: "0545978653",
-	},
-});
+// const car = new Product({
+// 	name: "mazda 3012451213",
+// 	category: "electronic cars",
+// 	isActive: true,
+// 	details: {
+// 		description: "new fking car!!!!!!!! without discount dlsaodkoasko dsa",
+// 		price: 9001,
+// 		images: ["img1", "img2"],
+// 		phone: "0545978653",
+// 	},
+// });
 
-car
-	.save()
-	.then(() => {
-		console.log(car);
-	})
-	.catch((error) => {
-		console.log(error);
-	});
+// car
+// 	.save()
+// 	.then(() => {
+// 		console.log(car);
+// 	})
+// 	.catch((error) => {
+// 		console.log(error);
+// 	});
 
-const mario = new Product({
-	name: "new switch mario",
-	category: "mario",
-	isActive: true,
-	details: {
-		description: "MARIOooooooooooooooooooo",
-		price: 1234,
-		discount: 233,
-		images: ["img1", "img2"],
-		phone: "0521569456",
-	},
-});
+// const mario = new Product({
+// 	name: "new switch mario",
+// 	category: "mario",
+// 	isActive: true,
+// 	details: {
+// 		description: "MARIOooooooooooooooooooo",
+// 		price: 1234,
+// 		discount: 233,
+// 		images: ["img1", "img2"],
+// 		phone: "0521569456",
+// 	},
+// });
 
-mario
-	.save()
-	.then(() => {
-		console.log(mario);
-	})
-	.catch((error) => {
-		console.log(error);
-	});
+// mario
+// 	.save()
+// 	.then(() => {
+// 		console.log(mario);
+// 	})
+// 	.catch((error) => {
+// 		console.log(error);
+// 	});
 
 module.exports = Product;

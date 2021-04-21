@@ -44,6 +44,53 @@ app.get("/products/over-nine-thousand", async (req, res) => {
 	}
 });
 
+app.put("/active/toggle/:id", async (req, res) => {
+	try {
+		const product = await Product.findById(req.params.id);
+		product.isActive = !product.isActive;
+		await product.save();
+		res.status(201).send(product);
+	} catch (e) {
+		res.status(500).send("User not found");
+	}
+});
+
+app.put("/discount/:id", async (req, res) => {
+	try {
+		const newDiscount = req.body.discount;
+		await validateDiscount(newDiscount);
+		const product = await Product.findById(req.params.id);
+		product.details.discount = newDiscount;
+		await product.save();
+		res.status(201).send(product);
+	} catch (e) {
+		res.status(500).send(e);
+	}
+});
+
+app.delete("/delete/:id", async (req, res) => {
+	try {
+		const product = await Product.findByIdAndDelete(req.params.id);
+		if (!product) return res.status(404).send("user not found");
+		res.send(product);
+	} catch (e) {
+		res.status(500).send();
+	}
+});
+
+app.delete("/deleteAll", async (req, res) => {
+	try {
+		const products = await Product.deleteMany({});
+		if (products.deletedCount === 0) res.send("collection is clean");
+		res.send(products);
+	} catch (e) {
+		res.status(500).send();
+	}
+});
+const validateDiscount = (discount) => {
+	if (discount < 0) throw new Error("discount must be positive");
+};
+
 app.listen(port, () => {
 	console.log(`Example app listening at http://localhost:${port}`);
 });
